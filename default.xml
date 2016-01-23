@@ -410,6 +410,10 @@
  <project path="system/netd" name="android_system_netd" remote="du" revision="m" />
  <project path="system/vold" name="android_system_vold" remote="du" revision="m-caf" />
 
+ <!-- device -->
+ <project path="device/qcom/common" name="android_device_qcom_common" revision="m-caf" remote="du" />
+ <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" revision="m-caf" remote="du" />
+
  <!--frameworks-->
  <project path="frameworks/av" name="android_frameworks_av" remote="du" revision="m-caf" />
  <project path="frameworks/base" name="android_frameworks_base" remote="du" revision="m-caf" />
