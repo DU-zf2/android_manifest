@@ -393,8 +393,8 @@
 
  <!-- DU REPOS -->
  <!-- general -->
- <project path="manifest" name="android_manifest" remote="du" revision="m" />
- <project path="build" name="android_build" remote="du" revision="m" >
+ <project path="manifest" name="android_manifest" remote="du" revision="m-hybrid" />
+ <project path="build" name="android_build" remote="du" revision="m-caf" >
  <copyfile src="core/root.mk" dest="Makefile" />
  </project>
  <project path="development" name="android_development" remote="du" revision="m" />
@@ -404,18 +404,18 @@
  <project path="external/sepolicy" name="android_external_sepolicy" remote="du" revision="m" />
  <project path="libcore" name="android_libcore" remote="du" revision="m" />
  <project path="system/bt" name="android_system_bt" remote="du" revision="m" />
- <project path="system/core" name="android_system_core" remote="du" revision="m" />
+ <project path="system/core" name="android_system_core" remote="du" revision="m-caf" />
  <project path="system/extras" name="android_system_extras" remote="du" revision="m" />
- <project path="system/media" name="android_system_media" remote="du" revision="m" />
+ <project path="system/media" name="android_system_media" remote="du" revision="m-caf" />
  <project path="system/netd" name="android_system_netd" remote="du" revision="m" />
- <project path="system/vold" name="android_system_vold" remote="du" revision="m" />
+ <project path="system/vold" name="android_system_vold" remote="du" revision="m-caf" />
 
  <!--frameworks-->
- <project path="frameworks/av" name="android_frameworks_av" remote="du" revision="m" />
- <project path="frameworks/base" name="android_frameworks_base" remote="du" revision="m" />
- <project path="frameworks/native" name="android_frameworks_native" remote="du" revision="m" />
+ <project path="frameworks/av" name="android_frameworks_av" remote="du" revision="m-caf" />
+ <project path="frameworks/base" name="android_frameworks_base" remote="du" revision="m-caf" />
+ <project path="frameworks/native" name="android_frameworks_native" remote="du" revision="m-caf" />
  <project path="frameworks/opt/datetimepicker" name="android_frameworks_opt_datetimepicker" remote="du" revision="m" />
- <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="du" revision="m" />
+ <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="du" revision="m-caf" />
  <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" remote="du" revision="m" />
  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="du" revision="m" />
  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="du" revision="m" />
@@ -424,18 +424,29 @@
  <!--hardware-->
  <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" remote="du" revision="m" />
  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="du" revision="m" />
- <project path="hardware/libhardware" name="android_hardware_libhardware" remote="du" revision="m" />
- <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="du" revision="m" />
- <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="du" revision="m" />
- <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="du" revision="m" />
- <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="du" revision="m" />
- <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="du" revision="m" />
- <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="du" revision="m" />
- <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" remote="du" revision="m" />
- <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="du" revision="m" />
- <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="du" revision="m" />
- <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="du" revision="m" />
- <project path="hardware/ril" name="android_hardware_ril" remote="du" revision="m" />
+ <project path="hardware/libhardware" name="android_hardware_libhardware" remote="du" revision="m-caf" />
+ <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="du" revision="m-caf" />
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" revision="m-caf" remote="du" />
+  <project path="hardware/qcom/audio-caf/apq8084" name="android_hardware_qcom_audio" revision="m-caf-8084" remote="du" />
+  <project path="hardware/qcom/audio-caf/msm8916" name="android_hardware_qcom_audio" revision="m-caf-8916" remote="du" />
+  <project path="hardware/qcom/audio-caf/msm8960" name="android_hardware_qcom_audio" revision="m-caf-8960" remote="du" />
+  <project path="hardware/qcom/audio-caf/msm8974" name="android_hardware_qcom_audio" revision="m-caf-8974" remote="du" />
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" revision="m-caf" remote="du" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" revision="m-caf" remote="du" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" revision="m-caf" remote="du" />
+  <project path="hardware/qcom/display-caf/apq8084" name="android_hardware_qcom_display" revision="m-caf-8084" remote="du" />
+  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" revision="m-caf-8916" remote="du" />
+  <project path="hardware/qcom/display-caf/msm8960" name="android_hardware_qcom_display" revision="m-caf-8960" remote="du" />
+  <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" revision="m-caf-8974" remote="du" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" revision="m-caf" remote="du" />
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" revision="m-caf" remote="du" />
+  <project path="hardware/qcom/media/default" name="android_hardware_qcom_media" revision="m-caf" remote="du" />
+  <project path="hardware/qcom/media-caf/apq8084" name="android_hardware_qcom_media" revision="m-caf-8084" remote="du" />
+  <project path="hardware/qcom/media-caf/msm8916" name="android_hardware_qcom_media" revision="m-caf-8916" remote="du" />
+  <project path="hardware/qcom/media-caf/msm8960" name="android_hardware_qcom_media" revision="m-caf-8960" remote="du" />
+  <project path="hardware/qcom/media-caf/msm8974" name="android_hardware_qcom_media" revision="m-caf-8974" remote="du" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" revision="m-caf" remote="du" />
+ <project path="hardware/ril" name="android_hardware_ril" remote="du" revision="m-caf" />
  <project path="hardware/ti/omap3" name="android_hardware_ti_omap3" remote="du" revision="m" />
  <project path="hardware/ti/omap4xxx" name="android_hardware_ti_omap4xxx" remote="du" revision="m" />
 
@@ -468,7 +479,7 @@
  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="du" revision="m" />
  <project path="packages/wallpapers/PhaseBeam" name="android_packages_wallpapers_PhaseBeam" remote="du" revision="m" />
  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="du" revision="m" />
- <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="du" revision="m" />
+ <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="du" revision="m-caf" />
  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="du" revision="m" />
  <project path="packages/providers/ThemesProvider" name="android_packages_providers_ThemesProvider" remote="du" revision="m" />
  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="du" revision="m" />
@@ -478,11 +489,9 @@
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="android-prebuilts-gcc-linux-x86-arm-arm-eabi-4.9" remote="du" revision="m" />
 
  <!-- vendor -->
- <project path="vendor/du" name="android_vendor_du" remote="du" revision="m" />
- <project path="vendor/asus" name="android_vendor_asus" remote="du" revision="m" />
- <project path="vendor/htc" name="android_vendor_htc" remote="du" revision="m" />
- <project path="vendor/huawei" name="android_vendor_huawei" remote="du" revision="m" />
- <project path="vendor/lge" name="android_vendor_lge" remote="du" revision="m" />
- <project path="vendor/motorola" name="android_vendor_motorola" remote="du" revision="m" />
+ <project path="vendor/du" name="android_vendor_du" remote="du" revision="m-caf" />
+ <project path="vendor/qcom/opensource/display-frameworks" name="android_vendor_qcom_opensource_display-frameworks" remote="du" revision="m-caf" />
+ <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="du" revision="m-caf" />
+ <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" remote="du" revision="m-caf" />
 
 </manifest>
