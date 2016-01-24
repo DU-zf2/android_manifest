@@ -392,7 +392,7 @@
  <!-- DU REPOS -->
  <!-- general -->
  <project path="manifest" name="android_manifest" remote="du" revision="m-hybrid" />
- <project path="bionic" name="android_bionic" remote="du" revision="m-caf" >
+ <project path="bionic" name="android_bionic" remote="du" revision="m-caf" />
  <project path="build" name="android_build" remote="du" revision="m-caf" >
  <copyfile src="core/root.mk" dest="Makefile" />
  </project>
