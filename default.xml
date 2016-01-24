@@ -419,7 +419,7 @@
  <project path="frameworks/base" name="android_frameworks_base" remote="du" revision="m-caf" />
  <project path="frameworks/native" name="android_frameworks_native" remote="du" revision="m-caf" />
  <project path="frameworks/opt/datetimepicker" name="android_frameworks_opt_datetimepicker" remote="du" revision="m" />
- <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="du" revision="m-caf" />
+ <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="du" revision="m" />
  <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" remote="du" revision="m" />
  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="du" revision="m" />
  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="du" revision="m" />
