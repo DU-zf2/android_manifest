@@ -516,7 +516,7 @@
   <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" remote="du" revision="m-caf" />
 
   <!-- BEGIN Z00A -->
-  <project path="device/asus/Z00A" name="android_device_asus_Z00A" remote="mm" />
+  <project path="device/asus/Z00A" name="device_asus_Z00A" remote="mm" />
   <project path="device/asus/mofd-common" name="android_device_asus_mofd-common" remote="zf2" />
   <project path="kernel/asus/moorefield" name="android_kernel_asus_moorefield" remote="cm" />
   <project path="vendor/asus" name="proprietary_vendor_asus" remote="tm" />
