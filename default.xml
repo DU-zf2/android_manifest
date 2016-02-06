@@ -8,6 +8,10 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
+           
+ <remote  name="mm"
+           fetch="https://github.com/AOSP-Zenfone2"
+           revision="refs/heads/mm6.0" />
 
   <remote  name="du"
            fetch="https://github.com/DirtyUnicorns/"
@@ -18,6 +22,10 @@
            sync-c="true"
            sync-f="true"
            sync-j="8" />
+           
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod"
+           revision="cm-13.0" />
 
   <!--AOSP REPOS-->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -256,8 +264,10 @@
   <project path="hardware/intel/audio_media" name="platform/hardware/intel/audio_media" groups="intel" />
   <project path="hardware/intel/bootstub" name="platform/hardware/intel/bootstub" groups="intel" />
   <project path="hardware/intel/common/bd_prov" name="platform/hardware/intel/common/bd_prov" groups="intel" />
-  <project path="hardware/intel/common/libwsbm" name="platform/hardware/intel/common/libwsbm" groups="intel" />
-  <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
+  <project path="hardware/intel/common/libstagefrighthw" name="platform/hardware/intel/common/libstagefrighthw" groups="intel"/>
+  <project path="hardware/intel/common/utils" name="platform/hardware/intel/common/utils" groups="intel" />
+  <project path="hardware/intel/common/wrs_omxil_core" name="platform/hardware/intel/common/wrs_omxil_core" groups="intel" />
+  <project path="hardware/intel/sensors" name="platform/hardware/intel/sensors" groups="intel_sensors" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/ti/omap3" name="platform/hardware/ti/omap3" groups="omap3" />
@@ -362,6 +372,16 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
+  
+  <project path="external/stlport" name="android_external_stlport" remote="cm" />
+  <project path="hardware/intel/common/libmix" name="android_hardware_intel_common_libmix" remote="cm" />
+  <project path="hardware/intel/common/libva" name="android_hardware_intel_common_libva" remote="cm"  />
+  <project path="hardware/intel/common/libwsbm" name="android_hardware_intel_common_libwsbm" remote="cm" />
+  <project path="hardware/intel/common/omx-components" name="android_hardware_intel_common_omx-components" remote="cm" />
+  <project path="hardware/intel/img/hwcomposer" name="android_hardware_intel_img_hwcomposer" remote="cm" />
+  <project path="hardware/intel/img/psb_headers" name="android_hardware_intel_img_psb_headers" remote="cm" />
+  <project path="hardware/intel/img/psb_video" name="android_hardware_intel_img_psb_video" remote="cm" />
+
 
   <!-- DU REPOS -->
   <!-- general -->
@@ -416,15 +436,6 @@
 
   <!--hardware-->
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" revision="m-caf" remote="du" />
-  <project path="hardware/intel/common/libmix" name="android_hardware_intel_common_libmix" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/common/libstagefrighthw" name="android_hardware_intel_common_libstagefrighthw" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/common/libva" name="android_hardware_intel_common_libva" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/common/omx-components" name="android_hardware_intel_common_omx-components" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/common/utils" name="android_hardware_intel_common_utils" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/common/wrs_omxil_core" name="android_hardware_intel_common_wrs_omxil_core" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/img/hwcomposer" name="android_hardware_intel_img_hwcomposer" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/img/libdrm" name="android_hardware_intel_img_libdrm" revision="lollipop-caf" remote="du" />
-  <project path="hardware/intel/img/psb_video" name="android_hardware_intel_img_psb_video" revision="lollipop-caf" remote="du" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" revision="m-caf" remote="du" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" revision="m-caf" remote="du" />
   <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="m-caf" remote="du" />
@@ -497,4 +508,12 @@
   <project path="vendor/qcom/opensource/display-frameworks" name="android_vendor_qcom_opensource_display-frameworks" remote="du" revision="m-caf" />
   <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="du" revision="m-caf" />
   <project path="vendor/qcom/opensource/time-services" name="android_vendor_qcom_opensource_time-services" remote="du" revision="m-caf" />
+
+  <!-- BEGIN Z00A -->
+  <project path="device/asus/Z00A" name="android_device_asus_Z00A" remote="mm" />
+  <project path="device/asus/mofd-common" name="android_device_asus_mofd-common" remote="zf2" />
+  <project path="kernel/asus/moorefield" name="CyanogenMod/android_kernel_asus_moorefield" remote="cm" />
+  <project path="vendor/asus" name="TheMuppets/proprietary_vendor_asus" remote="cm" />
+
+
 </manifest>
