@@ -12,6 +12,10 @@
  <remote  name="mm"
            fetch="https://github.com/andreturket"
            revision="refs/heads/mm6.0" />
+           
+ <remote  name="zf2"
+           fetch="https://github.com/CAF-zf2"
+           revision="refs/heads/mm6.0" />
 
   <remote  name="du"
            fetch="https://github.com/DirtyUnicorns/"
