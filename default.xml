@@ -385,7 +385,6 @@
 
   <!-- DU REPOS -->
   <!-- general -->
-  <project path="manifest" name="android_manifest" remote="du" revision="m-caf" />
    <project path="build" name="android_build" remote="du" revision="m-caf" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -417,7 +416,6 @@
   <project path="external/skia" name="android_external_skia" revision="m-caf" remote="du" />
   <project path="external/sonivox" name="android_external_sonivox" revision="m-caf" remote="du" />
   <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" revision="m-caf" remote="du" />
-  <project path="external/stlport" name="android_external_stlport" revision="m-caf" remote="du" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" revision="m-caf" remote="du" />
   <project path="external/tinycompress" name="android_external_tinycompress" revision="m-caf" remote="du" />
   <project path="external/tinyxml2" name="android_external_tinyxml2" revision="m-caf" remote="du" />
@@ -435,6 +433,7 @@
   <project path="frameworks/wilhelm" name="android_frameworks_wilhelm" revision="m-caf" remote="du" />
 
   <!--hardware-->
+  <project path="hardware/broadcom/wlan" name="CyanogenMod/android_hardware_broadcom_wlan" remote="cm" />
   <project path="hardware/broadcom/libbt" name="android_hardware_broadcom_libbt" groups="pdk" revision="m-caf" remote="du" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" revision="m-caf" remote="du" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" revision="m-caf" remote="du" />
