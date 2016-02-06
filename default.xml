@@ -10,7 +10,7 @@
            review="android-review.googlesource.com" />
            
  <remote  name="mm"
-           fetch="https://github.com/AOSP-Zenfone2"
+           fetch="https://github.com/andreturket"
            revision="refs/heads/mm6.0" />
 
   <remote  name="du"
