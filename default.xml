@@ -413,7 +413,7 @@
   <project path="external/connectivity" name="android_external_connectivity" revision="m-caf" remote="du" />
   <project path="external/dhcpcd" name="android_external_dhcpcd" revision="m-caf" remote="du" />
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" revision="m-caf" remote="du" />
-  <project path="external/ffmpeg" name="android_external_ffmpeg" revision="m-caf" remote="du" />
+  <project path="external/ffmpeg" name="android_external_ffmpeg" remote="cm" />
   <project path="external/iproute2" name="android_external_iproute2" revision="m-caf" remote="du" />
   <project path="external/iptables" name="android_external_iptables" revision="m-caf" remote="du" />
   <project path="external/jpeg" name="android_external_jpeg" revision="m-caf" remote="du" />
